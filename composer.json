@@ -11,7 +11,13 @@
         "zhuzhichao/ip-location-zh": "~1.2",
         "barryvdh/laravel-debugbar": "~2.0",
         "douyasi/identity-card": "dev-master",
-        "doctrine/dbal": "2.5"
+        "doctrine/dbal": "^2",
+        "jenssegers/mongodb": "dev-master",
+        "jenssegers/mongodb-session": "dev-master",
+        "jenssegers/mongodb-sentry": "dev-master",
+        "laravel/envoy": "dev-master",
+        "oodle/krumo": "^0.5",
+        "barryvdh/laravel-ide-helper": "^2.0@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

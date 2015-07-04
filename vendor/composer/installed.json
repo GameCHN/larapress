@@ -3495,5 +3495,947 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "doctrine/lexer",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/lexer.git",
+            "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
+            "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2014-09-09 13:34:57",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common\\Lexer\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "lexer",
+            "parser"
+        ]
+    },
+    {
+        "name": "doctrine/annotations",
+        "version": "v1.2.6",
+        "version_normalized": "1.2.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/annotations.git",
+            "reference": "f4a91702ca3cd2e568c3736aa031ed00c3752af4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/annotations/zipball/f4a91702ca3cd2e568c3736aa031ed00c3752af4",
+            "reference": "f4a91702ca3cd2e568c3736aa031ed00c3752af4",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/lexer": "1.*",
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "doctrine/cache": "1.*",
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2015-06-17 12:21:22",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common\\Annotations\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Docblock Annotations Parser",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "annotations",
+            "docblock",
+            "parser"
+        ]
+    },
+    {
+        "name": "doctrine/collections",
+        "version": "v1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/collections.git",
+            "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/collections/zipball/6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
+            "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2015-04-14 22:21:58",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common\\Collections\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Collections Abstraction library",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "array",
+            "collections",
+            "iterator"
+        ]
+    },
+    {
+        "name": "doctrine/cache",
+        "version": "v1.4.1",
+        "version_normalized": "1.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/cache.git",
+            "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/cache/zipball/c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+            "reference": "c9eadeb743ac6199f7eec423cb9426bc518b7b03",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "conflict": {
+            "doctrine/common": ">2.2,<2.4"
+        },
+        "require-dev": {
+            "phpunit/phpunit": ">=3.7",
+            "predis/predis": "~1.0",
+            "satooshi/php-coveralls": "~0.6"
+        },
+        "time": "2015-04-15 00:11:59",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.5.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common\\Cache\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Caching library offering an object-oriented API for many cache backends",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "cache",
+            "caching"
+        ]
+    },
+    {
+        "name": "doctrine/common",
+        "version": "v2.5.0",
+        "version_normalized": "2.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/common.git",
+            "reference": "cd8daf2501e10c63dced7b8b9b905844316ae9d3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/common/zipball/cd8daf2501e10c63dced7b8b9b905844316ae9d3",
+            "reference": "cd8daf2501e10c63dced7b8b9b905844316ae9d3",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/annotations": "1.*",
+            "doctrine/cache": "1.*",
+            "doctrine/collections": "1.*",
+            "doctrine/inflector": "1.*",
+            "doctrine/lexer": "1.*",
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~3.7"
+        },
+        "time": "2015-04-02 19:55:44",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.6.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+            }
+        ],
+        "description": "Common Library for Doctrine projects",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "annotations",
+            "collections",
+            "eventmanager",
+            "persistence",
+            "spl"
+        ]
+    },
+    {
+        "name": "doctrine/dbal",
+        "version": "v2.5.1",
+        "version_normalized": "2.5.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/dbal.git",
+            "reference": "628c2256b646ae2417d44e063bce8aec5199d48d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/doctrine/dbal/zipball/628c2256b646ae2417d44e063bce8aec5199d48d",
+            "reference": "628c2256b646ae2417d44e063bce8aec5199d48d",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/common": ">=2.4,<2.6-dev",
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*",
+            "symfony/console": "2.*"
+        },
+        "suggest": {
+            "symfony/console": "For helpful console commands such as SQL execution and import of files."
+        },
+        "time": "2015-01-12 21:52:47",
+        "bin": [
+            "bin/doctrine-dbal"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\DBAL\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de"
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+            },
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+            }
+        ],
+        "description": "Database Abstraction Layer",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "database",
+            "dbal",
+            "persistence",
+            "queryobject"
+        ]
+    },
+    {
+        "name": "jenssegers/mongodb",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jenssegers/laravel-mongodb.git",
+            "reference": "0c3a8e7ea75158085833801609f35790259c4d8c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/0c3a8e7ea75158085833801609f35790259c4d8c",
+            "reference": "0c3a8e7ea75158085833801609f35790259c4d8c",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/container": "^5.0",
+            "illuminate/database": "^5.0",
+            "illuminate/events": "^5.0",
+            "illuminate/support": "^5.0",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "*",
+            "orchestra/testbench": "3.0.*",
+            "satooshi/php-coveralls": "*"
+        },
+        "suggest": {
+            "jenssegers/mongodb-sentry": "Add Sentry support to Laravel-MongoDB",
+            "jenssegers/mongodb-session": "Add MongoDB session support to Laravel-MongoDB"
+        },
+        "time": "2015-06-21 12:57:24",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Jenssegers\\Mongodb": "src/",
+                "Jenssegers\\Eloquent": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jens Segers",
+                "homepage": "http://jenssegers.be"
+            }
+        ],
+        "description": "A MongoDB based Eloquent model and Query builder for Laravel 4",
+        "keywords": [
+            "database",
+            "eloquent",
+            "laravel",
+            "model",
+            "mongo",
+            "mongodb"
+        ]
+    },
+    {
+        "name": "jenssegers/mongodb-session",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jenssegers/laravel-mongodb-session.git",
+            "reference": "734604a3a0708e58b72254d517962ae2f21365da"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jenssegers/laravel-mongodb-session/zipball/734604a3a0708e58b72254d517962ae2f21365da",
+            "reference": "734604a3a0708e58b72254d517962ae2f21365da",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/session": "~4.0|~5.0",
+            "jenssegers/mongodb": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2015-05-07 08:08:32",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Jenssegers\\Mongodb\\Session": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jens Segers",
+                "homepage": "http://jenssegers.be"
+            }
+        ],
+        "description": "A MongoDB session driver for Laravel 4",
+        "keywords": [
+            "driver",
+            "laravel",
+            "mongo",
+            "mongodb",
+            "session"
+        ]
+    },
+    {
+        "name": "cartalyst/sentry",
+        "version": "dev-feature/laravel-5",
+        "version_normalized": "dev-feature/laravel-5",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cartalyst/sentry.git",
+            "reference": "092192e969520bb287b402fbe77ab070d4267910"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cartalyst/sentry/zipball/092192e969520bb287b402fbe77ab070d4267910",
+            "reference": "092192e969520bb287b402fbe77ab070d4267910",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "illuminate/cookie": "~4.0|~5.0",
+            "illuminate/database": "~4.0|~5.0",
+            "illuminate/http": "~4.0|~5.0",
+            "illuminate/session": "~4.0|~5.0",
+            "ircmaxell/password-compat": "1.0.*",
+            "mockery/mockery": "0.9.*"
+        },
+        "suggest": {
+            "happydemon/txt": "Required Text helpers when using the Kohana implementation",
+            "illuminate/database": "Default sentry user, group and throttling implementations.",
+            "ircmaxell/password-compat": "Default hashing uses PHP 5.5 password_* functions, with forward-compatible support."
+        },
+        "time": "2015-04-20 12:47:58",
+        "type": "library",
+        "extra": {
+            "component": "package",
+            "frameworks": [
+                "Laravel 3",
+                "Laravel 4",
+                "CodeIgniter 3",
+                "FuelPHP 1",
+                "Kohana"
+            ],
+            "versions": {
+                "1": "1.1/master",
+                "2": "master"
+            },
+            "branch-alias": {
+                "dev-master": "2.2.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/Cartalyst/Sentry/Groups/Exceptions.php",
+                "src/Cartalyst/Sentry/Throttling/Exceptions.php",
+                "src/Cartalyst/Sentry/Users/Exceptions.php",
+                "src/migrations"
+            ],
+            "psr-0": {
+                "Cartalyst\\Sentry": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Ben Corlett",
+                "email": "ben.corlett@cartalyst.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Cartalyst LLC",
+                "email": "help@cartalyst.com"
+            },
+            {
+                "name": "Bruno Gaspar",
+                "email": "bruno.gaspar@cartalyst.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Dan Syme",
+                "email": "dan.syme@cartalyst.com",
+                "role": "Creator & Designer"
+            },
+            {
+                "name": "Daniel Petrie",
+                "email": "dan.petrie@cartalyst.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
+        "keywords": [
+            "auth",
+            "codeigniter",
+            "fuelphp",
+            "kohana",
+            "laravel",
+            "security"
+        ]
+    },
+    {
+        "name": "jenssegers/mongodb-sentry",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jenssegers/laravel-mongodb-sentry.git",
+            "reference": "d43d372e8a119eae6ac4646ea330b21bc27e8576"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jenssegers/laravel-mongodb-sentry/zipball/d43d372e8a119eae6ac4646ea330b21bc27e8576",
+            "reference": "d43d372e8a119eae6ac4646ea330b21bc27e8576",
+            "shasum": ""
+        },
+        "require": {
+            "cartalyst/sentry": "dev-feature/laravel-5",
+            "jenssegers/mongodb": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2015-03-21 19:22:15",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Jenssegers\\Mongodb\\Sentry": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jens Segers",
+                "homepage": "http://jenssegers.be"
+            }
+        ],
+        "description": "An extension for Laravel-MongoDB that lets you work with Sentry",
+        "keywords": [
+            "Authentication",
+            "laravel",
+            "mongo",
+            "mongodb",
+            "sentry"
+        ]
+    },
+    {
+        "name": "nategood/httpful",
+        "version": "0.2.19",
+        "version_normalized": "0.2.19.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nategood/httpful.git",
+            "reference": "bd73f89d34d8f879c54ac46eb94b0f7be1d00820"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nategood/httpful/zipball/bd73f89d34d8f879c54ac46eb94b0f7be1d00820",
+            "reference": "bd73f89d34d8f879c54ac46eb94b0f7be1d00820",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "time": "2015-03-08 15:22:23",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Httpful": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nate Good",
+                "email": "me@nategood.com",
+                "homepage": "http://nategood.com"
+            }
+        ],
+        "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+        "homepage": "http://github.com/nategood/httpful",
+        "keywords": [
+            "api",
+            "curl",
+            "http",
+            "requests",
+            "rest",
+            "restful"
+        ]
+    },
+    {
+        "name": "laravel/envoy",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel/envoy.git",
+            "reference": "53651ba3222837114c59b49c11b8429ce6464cc8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel/envoy/zipball/53651ba3222837114c59b49c11b8429ce6464cc8",
+            "reference": "53651ba3222837114c59b49c11b8429ce6464cc8",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~4.1|~5.0",
+            "nategood/httpful": "~0.2",
+            "symfony/console": "~2.3",
+            "symfony/process": "~2.3"
+        },
+        "time": "2015-06-22 15:24:27",
+        "bin": [
+            "envoy"
+        ],
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "Elegant SSH tasks for PHP.",
+        "keywords": [
+            "laravel",
+            "ssh"
+        ]
+    },
+    {
+        "name": "oodle/krumo",
+        "version": "v0.5.0",
+        "version_normalized": "0.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oodle/krumo.git",
+            "reference": "48239769290e267fd7d6ddd1c37e08f96b87221e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oodle/krumo/zipball/48239769290e267fd7d6ddd1c37e08f96b87221e",
+            "reference": "48239769290e267fd7d6ddd1c37e08f96b87221e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.17"
+        },
+        "time": "2014-02-26 21:10:16",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "class.krumo.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Kaloyan K. Tsvetkov",
+                "email": "kaloyan@kaloyan.info"
+            },
+            {
+                "name": "Matthew J. Mucklo",
+                "email": "mmucklo@corp.oodle.com"
+            },
+            {
+                "name": "Stefan Thomas",
+                "email": "moon@justmoon.de"
+            }
+        ],
+        "description": "KRUMO - version 2.0 of print_r(); and var_dump(); (with new updates)",
+        "keywords": [
+            "debug",
+            "debugging",
+            "krumo",
+            "pretty",
+            "print",
+            "print_r",
+            "var_dump"
+        ]
+    },
+    {
+        "name": "symfony/class-loader",
+        "version": "v2.7.1",
+        "version_normalized": "2.7.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/ClassLoader.git",
+            "reference": "84843730de48ca0feba91004a03c7c952f8ea1da"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/ClassLoader/zipball/84843730de48ca0feba91004a03c7c952f8ea1da",
+            "reference": "84843730de48ca0feba91004a03c7c952f8ea1da",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "symfony/finder": "~2.0,>=2.0.5",
+            "symfony/phpunit-bridge": "~2.7"
+        },
+        "time": "2015-06-08 09:37:21",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\ClassLoader\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony ClassLoader Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "barryvdh/laravel-ide-helper",
+        "version": "v2.0.6",
+        "version_normalized": "2.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/barryvdh/laravel-ide-helper.git",
+            "reference": "037386153630a7515a1542f29410d8c267651689"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/037386153630a7515a1542f29410d8c267651689",
+            "reference": "037386153630a7515a1542f29410d8c267651689",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/console": "5.0.x|5.1.x",
+            "illuminate/filesystem": "5.0.x|5.1.x",
+            "illuminate/support": "5.0.x|5.1.x",
+            "php": ">=5.4.0",
+            "phpdocumentor/reflection-docblock": "2.0.4",
+            "symfony/class-loader": "~2.3"
+        },
+        "require-dev": {
+            "doctrine/dbal": "~2.3"
+        },
+        "suggest": {
+            "doctrine/dbal": "Load information from the database about models for phpdocs (~2.3)"
+        },
+        "time": "2015-06-25 08:58:59",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Barryvdh\\LaravelIdeHelper\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Barry vd. Heuvel",
+                "email": "barryvdh@gmail.com"
+            }
+        ],
+        "description": "Laravel IDE Helper, generates correct PHPDocs for all Facade classes, to improve auto-completion.",
+        "keywords": [
+            "autocomplete",
+            "codeintel",
+            "helper",
+            "ide",
+            "laravel",
+            "netbeans",
+            "phpdoc",
+            "phpstorm",
+            "sublime"
+        ]
     }
 ]

@@ -16,4 +16,5 @@ return array(
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
     $vendorDir . '/barryvdh/laravel-debugbar/src/helpers.php',
     $vendorDir . '/zhuzhichao/ip-location-zh/src/IpLocationZh.php',
+    $vendorDir . '/oodle/krumo/class.krumo.php',
 );
