@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Events;
+namespace YCMS\Events;
 
 abstract class Event
 {

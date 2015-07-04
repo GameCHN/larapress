@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Cache;
+namespace YCMS\Cache;
 
-use Douyasi\Models\SystemOption;
+use YCMS\Models\SystemOption;
 use Cache;
 use Config;
 
@@ -13,7 +13,7 @@ use Config;
  * 操作模型：SystemOption
  * 操作数据表：system_options
  *
- * @package Douyasi\Cache
+ * @package YCMS\Cache
  * @author raoyc <raoyc2009@gmail.com>
  */
 

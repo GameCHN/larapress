@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Services;
+namespace YCMS\Services;
 
 
-use Douyasi\Models\Content;
+use YCMS\Models\Content;
 
 /**
  * ArticleService

@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\Content;
-use Douyasi\Models\Meta;
+use YCMS\Models\Content;
+use YCMS\Models\Meta;
 
 /**
  * 元仓库MetaRepository
@@ -18,15 +18,15 @@ class MetaRepository extends BaseRepository
     /**
      * The Content instance.
      *
-     * @var Douyasi\Models\Content
+     * @var YCMS\Models\Content
      */
     protected $content;
 
     /**
      * Create a new MetaRepository instance.
      *
-     * @param  Douyasi\Models\Meta $meta
-     * @param  Douyasi\Models\Content $content
+     * @param  YCMS\Models\Meta $meta
+     * @param  YCMS\Models\Content $content
      * @return void
      */
     public function __construct(
@@ -69,9 +69,9 @@ class MetaRepository extends BaseRepository
     /**
      * 创建或更新Meta分类
      *
-     * @param  Douyasi\Models\Meta $meta
+     * @param  YCMS\Models\Meta $meta
      * @param  array $inputs
-     * @return Douyasi\Models\Meta
+     * @return YCMS\Models\Meta
      */
     private function saveCategory($meta, $inputs)
     {
@@ -128,7 +128,7 @@ class MetaRepository extends BaseRepository
      *
      * @param  array $inputs
      * @param  string $type 元模型类型 分类category,标签tag
-     * @return Douyasi\Models\Meta
+     * @return YCMS\Models\Meta
      */
     public function store($inputs, $type = 'category')
     {

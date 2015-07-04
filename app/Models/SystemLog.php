@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Eloquent;
 
@@ -17,16 +17,16 @@ use Eloquent;
  * @property string $deleted_at 被软删除时间
  * @property \Carbon\Carbon $created_at 创建时间
  * @property \Carbon\Carbon $updated_at 修改更新时间
- * @property-read \Douyasi\Models\User $user 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereUserId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereType($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereUrl($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereContent($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereOperatorIp($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereDeletedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemLog whereUpdatedAt($value)
+ * @property-read \YCMS\Models\User $user 
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereUserId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereType($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereUrl($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereContent($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereOperatorIp($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereDeletedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemLog whereUpdatedAt($value)
  */
 class SystemLog extends Eloquent
 {
@@ -43,6 +43,6 @@ class SystemLog extends Eloquent
      */
     public function user()
     {
-        return $this->belongsTo('Douyasi\Models\User', 'user_id', 'id');
+        return $this->belongsTo('YCMS\Models\User', 'user_id', 'id');
     }
 }

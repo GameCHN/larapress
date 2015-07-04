@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Controllers\CommonController as CommonController;
+use YCMS\Http\Controllers\CommonController as CommonController;
 
 /**
  * 后台共用控制器

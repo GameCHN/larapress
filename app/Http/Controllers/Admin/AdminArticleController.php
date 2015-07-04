@@ -1,13 +1,13 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Requests\ArticleRequest;  //请求层
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Requests\ArticleRequest;  //请求层
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Douyasi\Repositories\ContentRepository;  //模型仓库层
-use Douyasi\Repositories\FlagRepository;  //推荐位仓库层
-use Douyasi\Cache\DataCache;
+use YCMS\Repositories\ContentRepository;  //模型仓库层
+use YCMS\Repositories\FlagRepository;  //推荐位仓库层
+use YCMS\Cache\DataCache;
 use Cache;
 
 /**
@@ -22,14 +22,14 @@ class AdminArticleController extends BackController
     /**
      * The ContentRepository instance.
      *
-     * @var Douyasi\Repositories\ContentRepository
+     * @var YCMS\Repositories\ContentRepository
      */
     protected $content;
 
     /**
      * The FlagRepository instance.
      *
-     * @var Douyasi\Repositories\FlagRepository
+     * @var YCMS\Repositories\FlagRepository
      */
     protected $flag;
 
@@ -133,7 +133,7 @@ class AdminArticleController extends BackController
     /**
      * Update the specified resource in storage.
      *
-     * @param \Douyasi\Http\Requests\ArticleRequest $request
+     * @param \YCMS\Http\Requests\ArticleRequest $request
      * @param  int  $id
      * @return Response
      */

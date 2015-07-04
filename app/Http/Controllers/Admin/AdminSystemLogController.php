@@ -1,13 +1,13 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Requests;
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Requests;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Cache;
-use Douyasi\Cache\SettingCache as SettingCache;
-use Douyasi\Repositories\SystemLogRepository;
+use YCMS\Cache\SettingCache as SettingCache;
+use YCMS\Repositories\SystemLogRepository;
 
 /**
  * 系统日志控制器
@@ -20,7 +20,7 @@ class AdminSystemLogController extends BackController
     /**
      * The SettingRepository instance.
      *
-     * @var Douyasi\Repositories\SystemLogRepository
+     * @var YCMS\Repositories\SystemLogRepository
      */
     protected $log;
 

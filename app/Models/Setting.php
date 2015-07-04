@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Eloquent;
 
@@ -14,13 +14,13 @@ use Eloquent;
  * @property boolean $status 状态 0未启用 1启用 其它数字表示异常
  * @property integer $type_id 设置所属类型id 0表示无任何归属类型
  * @property integer $sort 设置排序，数字越大排序越靠前
- * @property-read \Douyasi\Models\SettingType $setting_type 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Setting whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Setting whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Setting whereValue($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Setting whereStatus($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Setting whereTypeId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Setting whereSort($value)
+ * @property-read \YCMS\Models\SettingType $setting_type 
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Setting whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Setting whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Setting whereValue($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Setting whereStatus($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Setting whereTypeId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Setting whereSort($value)
  */
 class Setting extends Eloquent
 {
@@ -37,6 +37,6 @@ class Setting extends Eloquent
      */
     public function setting_type()
     {
-        return $this->belongsTo('Douyasi\Models\SettingType');
+        return $this->belongsTo('YCMS\Models\SettingType');
     }
 }

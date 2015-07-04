@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Eloquent;
 
@@ -16,17 +16,17 @@ use Eloquent;
  * @property string $description meta描述
  * @property integer $count meta被使用的次数
  * @property integer $sort meta排序，数字越大排序越靠前
- * @property-read \Douyasi\Models\Content $content 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereThumb($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereSlug($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereType($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereDescription($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereCount($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereSort($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta category()
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta tag()
+ * @property-read \YCMS\Models\Content $content 
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereThumb($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereSlug($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereType($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereCount($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta whereSort($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta category()
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Meta tag()
  */
 class Meta extends Eloquent
 {
@@ -60,6 +60,6 @@ class Meta extends Eloquent
      */
     public function content()
     {
-        return $this->belongsTo('Douyasi\Models\Content', 'id', 'category_id');
+        return $this->belongsTo('YCMS\Models\Content', 'id', 'category_id');
     }
 }

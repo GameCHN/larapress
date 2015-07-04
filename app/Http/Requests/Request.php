@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Http\Requests;
+namespace YCMS\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

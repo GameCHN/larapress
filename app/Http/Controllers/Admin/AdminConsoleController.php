@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Auth;
+namespace YCMS\Http\Controllers\Auth;
 
-use Douyasi\User;
+use YCMS\User;
 use Validator;
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller

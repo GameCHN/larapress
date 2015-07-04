@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Extensions;
+namespace YCMS\Extensions;
 
 use Illuminate\Validation\Validator;
 
@@ -106,7 +106,7 @@ class DouyasiValidator extends Validator
      */
     public function validateIdentityCard($attribute, $value)
     {
-        $ID = new \Douyasi\IdentityCard\ID;
+        $ID = new \YCMS\IdentityCard\ID;
         return $ID->validateIDCard($value);
     }
 }

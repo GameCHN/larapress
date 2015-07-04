@@ -1,6 +1,6 @@
 <?php 
 
-namespace Douyasi\Interfaces;
+namespace YCMS\Interfaces;
 
 /**
  * 定义DouyasiRequest接口

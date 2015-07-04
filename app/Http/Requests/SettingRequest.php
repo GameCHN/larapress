@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Http\Requests;
+namespace YCMS\Http\Requests;
 
-use Douyasi\Http\Requests\DouyasiRequest;
+use YCMS\Http\Requests\DouyasiRequest;
 
 class SettingRequest extends Request
 {

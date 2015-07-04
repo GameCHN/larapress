@@ -1,11 +1,11 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Requests\RoleRequest;
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Requests\RoleRequest;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Douyasi\Repositories\RoleRepository;
+use YCMS\Repositories\RoleRepository;
 
 /**
  * 角色资源控制器
@@ -18,7 +18,7 @@ class AdminRoleController extends BackController
     /**
      * The RoleRepository instance.
      *
-     * @var Douyasi\Repositories\RoleRepository
+     * @var YCMS\Repositories\RoleRepository
      */
     protected $role;
 

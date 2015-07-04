@@ -1,6 +1,6 @@
-<?php namespace Douyasi\Events;
+<?php namespace YCMS\Events;
 
-use Douyasi\Events\Event;
+use YCMS\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 class UserLogin extends Event

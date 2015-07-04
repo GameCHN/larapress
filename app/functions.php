@@ -129,7 +129,7 @@ function chinese_excerpt($content)
  */
 function page_links($model, $data = [])
 {
-    $presenter = new \Douyasi\Extensions\DouyasiPresenter($model);
+    $presenter = new \YCMS\Extensions\DouyasiPresenter($model);
     if (empty($data)) {
         $links = $model->render($presenter);
     } else {
@@ -223,7 +223,7 @@ function user($ret = 'nickname')
         }
     } else {
         if($ret === 'object'){
-            $user = app()->make('Douyasi\Repositories\UserRepository');
+            $user = app()->make('YCMS\Repositories\UserRepository');
             return $user->manager(1);  //主要为了修正 `php artisan route:list` 命令出错问题
         }
         else{
@@ -271,7 +271,7 @@ if (! function_exists('fragment')) {
      */
     function fragment($slug, $ret = '')
     {
-        $content = app()->make('Douyasi\Repositories\ContentRepository');
+        $content = app()->make('YCMS\Repositories\ContentRepository');
         $fragment = $content->fragment($slug);
         if (is_null($fragment)) {
             return '<!--no this fragment-->';

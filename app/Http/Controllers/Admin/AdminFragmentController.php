@@ -1,11 +1,11 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Requests\FragmentRequest;
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Requests\FragmentRequest;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Douyasi\Repositories\ContentRepository;
+use YCMS\Repositories\ContentRepository;
 use Cache;
 
 /**
@@ -20,7 +20,7 @@ class AdminFragmentController extends BackController
     /**
      * The ContentRepository instance.
      *
-     * @var Douyasi\Repositories\ContentRepository
+     * @var YCMS\Repositories\ContentRepository
      */
     protected $content;
 

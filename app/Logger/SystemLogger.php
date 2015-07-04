@@ -1,9 +1,9 @@
 <?php 
 
-namespace Douyasi\Logger;
+namespace YCMS\Logger;
 
 use Request;
-use Douyasi\Models\SystemLog;
+use YCMS\Models\SystemLog;
 
 /**
  * Class SystemLogger
@@ -11,7 +11,7 @@ use Douyasi\Models\SystemLog;
  * 操作模型：SystemLog
  * 操作数据表：system_log
  *
- * @package Douyasi\Logger
+ * @package YCMS\Logger
  * @author raoyc <raoyc2009@gmail.com>
  */
 class SystemLogger

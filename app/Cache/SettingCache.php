@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Cache;
+namespace YCMS\Cache;
 
-use Douyasi\Models\Setting as Setting;
-use Douyasi\Models\SettingType as SettingType;
+use YCMS\Models\Setting as Setting;
+use YCMS\Models\SettingType as SettingType;
 use Cache;
 use Config;
 
@@ -14,7 +14,7 @@ use Config;
  * 操作模型：Setting, SettingType
  * 操作数据表：settings, setting_type
  *
- * @package Douyasi\Cache
+ * @package YCMS\Cache
  * @author raoyc <raoyc2009@gmail.com>
  */
 class SettingCache

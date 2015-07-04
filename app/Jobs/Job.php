@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Jobs;
+namespace YCMS\Jobs;
 
 use Illuminate\Bus\Queueable;
 

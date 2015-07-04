@@ -1,12 +1,12 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Requests\UserRequest;
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Requests\UserRequest;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Douyasi\Logger\SystemLogger as SystemLogger;
-use Douyasi\Repositories\UserRepository;
+use YCMS\Logger\SystemLogger as SystemLogger;
+use YCMS\Repositories\UserRepository;
 use Cache;
 
 /**
@@ -21,7 +21,7 @@ class AdminUserController extends BackController
     /**
      * The UserRepository instance.
      *
-     * @var Douyasi\Repositories\UserRepository
+     * @var YCMS\Repositories\UserRepository
      */
     protected $user;
 

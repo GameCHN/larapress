@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\Setting;
-use Douyasi\Models\SettingType;
+use YCMS\Models\Setting;
+use YCMS\Models\SettingType;
 
 /**
  * 动态设置仓库SettingRepository
@@ -17,15 +17,15 @@ class SettingRepository extends BaseRepository
     /**
      * The Setting instance.
      *
-     * @var Douyasi\Models\setting
+     * @var YCMS\Models\setting
      */
     protected $setting;
 
     /**
      * Create a new SettingRepository instance.
      *
-     * @param  Douyasi\Models\SettinType $setting_type
-     * @param  Douyasi\Models\Setting $setting
+     * @param  YCMS\Models\SettinType $setting_type
+     * @param  YCMS\Models\Setting $setting
      * @return void
      */
     public function __construct(
@@ -52,9 +52,9 @@ class SettingRepository extends BaseRepository
     /**
      * 创建或更新动态设置
      *
-     * @param  Douyasi\Models\Setting
+     * @param  YCMS\Models\Setting
      * @param  array $inputs
-     * @return Douyasi\Models\Setting
+     * @return YCMS\Models\Setting
      */
     private function saveSetting($setting, $inputs)
     {
@@ -74,9 +74,9 @@ class SettingRepository extends BaseRepository
     /**
      * 创建或更新动态设置分组
      *
-     * @param  Douyasi\Models\SettingType
+     * @param  YCMS\Models\SettingType
      * @param  array $inputs
-     * @return Douyasi\Models\SettingType
+     * @return YCMS\Models\SettingType
      */
     private function saveType($setting_type, $inputs)
     {
@@ -147,7 +147,7 @@ class SettingRepository extends BaseRepository
      *
      * @param  array  $inputs
      * @param  string $for 操作对象，默认对Setting操作，否则对SettingType操作
-     * @return Douyasi\Models\Setting | Douyasi\Models\SettingType
+     * @return YCMS\Models\Setting | YCMS\Models\SettingType
      */
     public function store($inputs, $for = 'setting')
     {

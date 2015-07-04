@@ -1,12 +1,12 @@
 <?php
 
-namespace Douyasi\Http\Controllers;
+namespace YCMS\Http\Controllers;
 
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
-use Douyasi\Events\UserLogin;
-use Douyasi\Events\UserLogout;
+use YCMS\Events\UserLogin;
+use YCMS\Events\UserLogout;
 
 /**
  * 用户登录统一认证

@@ -1,11 +1,11 @@
 <?php
 
-namespace Douyasi\Providers;
+namespace YCMS\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
-use Douyasi\Handlers\Events\UserEventHandler;
+use YCMS\Handlers\Events\UserEventHandler;
 class EventServiceProvider extends ServiceProvider
 {
     /**
@@ -39,6 +39,6 @@ class EventServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['events']->subscribe('Douyasi\Listeners\UserEventListener');
+        $this->app['events']->subscribe('YCMS\Listeners\UserEventListener');
     }
 }

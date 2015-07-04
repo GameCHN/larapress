@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Zizaco\\Entrust\\' => array($vendorDir . '/zizaco/entrust/src/Entrust'),
     'Zhuzhichao\\IpLocationZh\\' => array($vendorDir . '/zhuzhichao/ip-location-zh/src'),
+    'YCMS\\' => array($baseDir . '/app'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'Vinkla\\Hashids\\' => array($vendorDir . '/vinkla/hashids/src'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
@@ -30,6 +31,7 @@ return array(
     'Pingpong\\Modules\\' => array($vendorDir . '/ycms/modules'),
     'Pingpong\\Generators\\' => array($vendorDir . '/pingpong/generators'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Modules\\' => array($baseDir . '/modules'),
     'Lord\\Laroute\\' => array($vendorDir . '/lord/laroute/src'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Illuminate\\Html\\' => array($vendorDir . '/illuminate/html'),
@@ -37,7 +39,6 @@ return array(
     'GrahamCampbell\\Manager\\' => array($vendorDir . '/graham-campbell/manager/src'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'Douyasi\\IdentityCard\\' => array($vendorDir . '/douyasi/identity-card'),
-    'Douyasi\\' => array($baseDir . '/app'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Collective\\Html\\' => array($vendorDir . '/laravelcollective/html/src'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),

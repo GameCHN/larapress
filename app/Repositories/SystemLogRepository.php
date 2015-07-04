@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\SystemLog;
+use YCMS\Models\SystemLog;
 
 /**
  * 系统配置仓库SystemOptionRepository
@@ -15,14 +15,14 @@ class SystemLogRepository extends BaseRepository
     /**
      * The SystemLog instance.
      *
-     * @var Douyasi\Models\SystemLog
+     * @var YCMS\Models\SystemLog
      */
     protected $log;
 
     /**
      * Create a new SystemLogRepository instance.
      *
-     * @param  Douyasi\Models\SystemLog $log
+     * @param  YCMS\Models\SystemLog $log
      * @return void
      */
     public function __construct(

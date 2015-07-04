@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Eloquent;
 
@@ -23,26 +23,26 @@ use Eloquent;
  * @property string $deleted_at 被软删除时间
  * @property \Carbon\Carbon $created_at 创建时间
  * @property \Carbon\Carbon $updated_at 修改更新时间
- * @property-read \Douyasi\Models\Meta $meta 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereFlag($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereThumb($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereContent($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereSlug($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereType($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereUserId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereIsTop($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereOwnerId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereOuterLink($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereCategoryId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereDeletedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content article()
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content page()
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content fragment()
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Content memo()
+ * @property-read \YCMS\Models\Meta $meta 
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereFlag($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereTitle($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereThumb($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereContent($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereSlug($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereType($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereUserId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereIsTop($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereOwnerId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereOuterLink($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereCategoryId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereDeletedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content article()
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content page()
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content fragment()
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Content memo()
  */
 class Content extends Eloquent
 {
@@ -88,7 +88,7 @@ class Content extends Eloquent
     public function meta()
     {
         //模型名 外键 本键
-        return $this->hasOne('Douyasi\Models\Meta', 'id', 'category_id');
+        return $this->hasOne('YCMS\Models\Meta', 'id', 'category_id');
     }
 
     /**

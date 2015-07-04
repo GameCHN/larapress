@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Events\UserUpdate as UserUpdate;
+use YCMS\Events\UserUpdate as UserUpdate;
 
 /**
  * 当前用户（Me）仓库MeRepository

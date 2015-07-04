@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Http;
+namespace YCMS\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \Douyasi\Http\Middleware\EncryptCookies::class,
+        \YCMS\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \Douyasi\Http\Middleware\VerifyCsrfToken::class,
+        \YCMS\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,11 +26,11 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Douyasi\Http\Middleware\Authenticate::class,
+        'auth' => \YCMS\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \Douyasi\Http\Middleware\RedirectIfAuthenticated::class,
-        'admin' => \Douyasi\Http\Middleware\Administrate::class,
-        'visitor' => \Douyasi\Http\Middleware\Visit::class,
-        'deny403' => \Douyasi\Http\Middleware\PermissionDenied::class,
+        'guest' => \YCMS\Http\Middleware\RedirectIfAuthenticated::class,
+        'admin' => \YCMS\Http\Middleware\Administrate::class,
+        'visitor' => \YCMS\Http\Middleware\Visit::class,
+        'deny403' => \YCMS\Http\Middleware\PermissionDenied::class,
     ];
 }

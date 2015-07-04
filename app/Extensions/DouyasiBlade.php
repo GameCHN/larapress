@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Extensions;
+namespace YCMS\Extensions;
 
 use Blade;
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Zizaco\Entrust\EntrustPermission;
 
@@ -15,12 +15,12 @@ use Zizaco\Entrust\EntrustPermission;
  * @property \Carbon\Carbon $created_at 创建时间
  * @property \Carbon\Carbon $updated_at 修改更新时间
  * @property-read \Illuminate\Database\Eloquent\Collection|\Config::get('entrust.role[] $roles 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Permission whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Permission whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Permission whereDisplayName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Permission whereDescription($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Permission whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Permission whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Permission whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Permission whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Permission whereDisplayName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Permission whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Permission whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Permission whereUpdatedAt($value)
  */
 class Permission extends EntrustPermission
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Eloquent;
 
@@ -12,11 +12,11 @@ use Eloquent;
  * @property string $name 设置类型项名
  * @property string $value 设置类型项值
  * @property integer $sort 设置类型排序，数字越大排序越靠前
- * @property-read \Illuminate\Database\Eloquent\Collection|\Douyasi\Models\Setting[] $setting 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereValue($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereSort($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\YCMS\Models\Setting[] $setting 
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SettingType whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SettingType whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SettingType whereValue($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SettingType whereSort($value)
  */
 class SettingType extends Eloquent
 {
@@ -33,6 +33,6 @@ class SettingType extends Eloquent
      */
     public function setting()
     {
-        return $this->hasMany('Douyasi\Models\Setting', 'type_id', 'id');
+        return $this->hasMany('YCMS\Models\Setting', 'type_id', 'id');
     }
 }

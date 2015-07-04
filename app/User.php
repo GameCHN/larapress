@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi;
+namespace YCMS;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -9,7 +9,7 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
 /**
- * Douyasi\User
+ * YCMS\User
  *
  * @property integer $id id
  * @property string $username 用户登录名
@@ -33,28 +33,28 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
  * @property string $confirmation_code 确认码
  * @property boolean $confirmed 是否已通过验证 0：未通过 1：通过
  * @property string $remember_token Laravel 追加的记住令牌
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereUsername($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User wherePassword($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereNickname($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereEmail($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereRealname($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User wherePid($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User wherePidCardThumb1($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User wherePidCardThumb2($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereAvatar($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User wherePhone($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereAddress($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereEmergencyContact($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereServicerId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereDeletedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereIsLock($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereUserType($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereConfirmationCode($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereConfirmed($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\User whereRememberToken($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereUsername($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User wherePassword($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereNickname($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereEmail($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereRealname($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User wherePid($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User wherePidCardThumb1($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User wherePidCardThumb2($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereAvatar($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User wherePhone($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereAddress($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereEmergencyContact($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereServicerId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereDeletedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereIsLock($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereUserType($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereConfirmationCode($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereConfirmed($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\User whereRememberToken($value)
  */
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract
 {

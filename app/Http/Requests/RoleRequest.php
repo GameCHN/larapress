@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Http\Requests;
+namespace YCMS\Http\Requests;
 
-use Douyasi\Http\Requests\Request;
+use YCMS\Http\Requests\Request;
 
 class RoleRequest extends Request
 {

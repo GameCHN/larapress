@@ -6,7 +6,10 @@ class ThemesController extends Controller {
 	
 	public function index()
 	{
-		return view('themes::index');
+
+        kd('rtest');
+
+        return view('themes::index');
 	}
 	
 }

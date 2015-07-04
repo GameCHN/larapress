@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Console\Commands;
+namespace YCMS\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

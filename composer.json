@@ -34,7 +34,7 @@
             "database"
         ],
         "psr-4": {
-            "Douyasi\\": "app/",
+            "YCMS\\": "app/",
             "Modules\\": "modules/"
         }
     },

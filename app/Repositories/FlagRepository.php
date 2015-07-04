@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\Flag;
+use YCMS\Models\Flag;
 
 /**
  * 推荐位Flag仓库FlagRepository
@@ -16,7 +16,7 @@ class FlagRepository extends BaseRepository
     /**
      * Create a new ContentRepository instance.
      *
-     * @param  Douyasi\Models\Flag $flag
+     * @param  YCMS\Models\Flag $flag
      * @return void
      */
     public function __construct(

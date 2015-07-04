@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Providers;
+namespace YCMS\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Douyasi\Extensions\DouyasiBlade;
+use YCMS\Extensions\DouyasiBlade;
 
 class AppServiceProvider extends ServiceProvider
 {

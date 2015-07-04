@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\Role;
-use Douyasi\Models\Permission;
+use YCMS\Models\Role;
+use YCMS\Models\Permission;
 
 /**
  * 角色（用户组）仓库RoleRepository
@@ -16,15 +16,15 @@ class RoleRepository extends BaseRepository
     /**
      * The Content instance.
      *
-     * @var Douyasi\Models\Permission
+     * @var YCMS\Models\Permission
      */
     protected $permission;
 
     /**
      * Create a new MetaRepository instance.
      *
-     * @param  Douyasi\Models\Role $role
-     * @param  Douyasi\Models\Permission $permission
+     * @param  YCMS\Models\Role $role
+     * @param  YCMS\Models\Permission $permission
      * @return void
      */
     public function __construct(
@@ -77,9 +77,9 @@ class RoleRepository extends BaseRepository
     /**
      * 创建或更新Role
      *
-     * @param  Douyasi\Models\Role $role
+     * @param  YCMS\Models\Role $role
      * @param  array $inputs
-     * @return Douyasi\Models\Role
+     * @return YCMS\Models\Role
      */
     private function saveRole($role, $inputs)
     {
@@ -123,7 +123,7 @@ class RoleRepository extends BaseRepository
      *
      * @param  array $inputs
      * @param  string|array $extra
-     * @return Douyasi\Models\Role
+     * @return YCMS\Models\Role
      */
     public function store($inputs, $extra = '')
     {

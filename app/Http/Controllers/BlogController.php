@@ -1,13 +1,13 @@
 <?php
 
-namespace Douyasi\Http\Controllers;
+namespace YCMS\Http\Controllers;
 
-use Douyasi\Http\Requests;
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Requests;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Douyasi\Cache\DataCache as DataCache;
-use Douyasi\Models\Content as Content;
-use Douyasi\Models\Meta as Meta;
+use YCMS\Cache\DataCache as DataCache;
+use YCMS\Models\Content as Content;
+use YCMS\Models\Meta as Meta;
 use Cache;
 
 /**

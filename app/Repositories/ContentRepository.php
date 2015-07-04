@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\Content;
-use Douyasi\Models\Meta;
+use YCMS\Models\Content;
+use YCMS\Models\Meta;
 
 /**
  * 内容仓库ContentRepository
@@ -16,15 +16,15 @@ class ContentRepository extends BaseRepository
     /**
      * The Meta instance.
      *
-     * @var Douyasi\Models\Meta
+     * @var YCMS\Models\Meta
      */
     protected $meta;
 
     /**
      * Create a new ContentRepository instance.
      *
-     * @param  Douyasi\Models\Content $content
-     * @param  Douyasi\Models\Meta $meta
+     * @param  YCMS\Models\Content $content
+     * @param  YCMS\Models\Meta $meta
      * @return void
      */
     public function __construct(
@@ -79,11 +79,11 @@ class ContentRepository extends BaseRepository
     /**
      * 创建或更新内容
      *
-     * @param  Douyasi\Models\Content $content
+     * @param  YCMS\Models\Content $content
      * @param  array $inputs
      * @param  string $type
      * @param  string|int $user_id
-     * @return Douyasi\Models\Content
+     * @return YCMS\Models\Content
      */
     private function saveContent($content, $inputs, $type = 'article', $user_id = '0')
     {
@@ -176,7 +176,7 @@ class ContentRepository extends BaseRepository
      * @param  array $inputs
      * @param  string $type 内容模型类型 文章article,单页page,碎片fragment
      * @param  string|int $user_id 管理用户id
-     * @return Douyasi\Models\Content
+     * @return YCMS\Models\Content
      */
     public function store($inputs, $type = 'article', $user_id = '0')
     {

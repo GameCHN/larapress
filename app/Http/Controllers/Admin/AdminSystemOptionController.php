@@ -1,11 +1,11 @@
 <?php
 
-namespace Douyasi\Http\Controllers\Admin;
+namespace YCMS\Http\Controllers\Admin;
 
-use Douyasi\Http\Controllers\Controller;
+use YCMS\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Douyasi\Cache\SystemOptionCache;
-use Douyasi\Repositories\SystemOptionRepository;
+use YCMS\Cache\SystemOptionCache;
+use YCMS\Repositories\SystemOptionRepository;
 
 /**
  * 系统配置控制器
@@ -18,7 +18,7 @@ class AdminSystemOptionController extends BackController
     /**
      * The SettingRepository instance.
      *
-     * @var Douyasi\Repositories\SettingRepository
+     * @var YCMS\Repositories\SettingRepository
      */
     protected $option;
 

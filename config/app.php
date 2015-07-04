@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', 'true'),
+    'debug'           => env('APP_DEBUG', 'true'),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url'             => 'http://localhost',
 
     //'cdn_url' => 'http://yastatic.cn',  //开启cdn,cdn根域名
 
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'timezone' => env('TIMEZONE', 'Asia/Shanghai'),
+    'timezone'        => env('TIMEZONE', 'Asia/Shanghai'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'locale' => 'zh-CN',
+    'locale'          => 'zh-CN',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,9 +80,9 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'RrQvzbUxaKIlj74s3hOYClGQ71zoVixr'),
+    'key'             => env('APP_KEY', 'RrQvzbUxaKIlj74s3hOYClGQ71zoVixr'),
 
-    'cipher' => 'AES-256-CBC',
+    'cipher'          => 'AES-256-CBC',
 
     /*
     |--------------------------------------------------------------------------
@@ -97,7 +97,7 @@ return [
     |
     */
 
-    'log' => 'single',
+    'log'             => 'single',
 
     /*
     |--------------------------------------------------------------------------
@@ -110,7 +110,7 @@ return [
     |
     */
 
-    'providers' => [
+    'providers'       => [
 
         /*
          * Laravel Framework Service Providers...
@@ -142,11 +142,9 @@ return [
         /*
          * Application Service Providers...
          */
-        Douyasi\Providers\AppServiceProvider::class,
-        Douyasi\Providers\EventServiceProvider::class,
-        Douyasi\Providers\RouteServiceProvider::class,
-
-        Pingpong\Modules\ModulesServiceProvider::class,
+        YCMS\Providers\AppServiceProvider::class,
+        YCMS\Providers\EventServiceProvider::class,
+        YCMS\Providers\RouteServiceProvider::class,
 
 
         /*
@@ -154,10 +152,14 @@ return [
          */
         Barryvdh\Debugbar\ServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
-        Douyasi\Providers\DouyasiValidatorServiceProvider::class,
+        YCMS\Providers\DouyasiValidatorServiceProvider::class,
 
         Lord\Laroute\LarouteServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        //append
+
+        Pingpong\Modules\ModulesServiceProvider::class,
     ],
 
     /*
@@ -171,7 +173,7 @@ return [
     |
     */
 
-    'aliases' => [
+    'aliases'         => [
 
         'App'       => Illuminate\Support\Facades\App::class,
         'Artisan'   => Illuminate\Support\Facades\Artisan::class,
@@ -216,7 +218,10 @@ return [
         'Ip'        => Zhuzhichao\IpLocationZh\Ip::class,
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
-         'Module' => Pingpong\Modules\ModulesServiceProvider::class,
+        /*
+         * Append
+         */
+        'Module'    => Pingpong\Modules\Facades\Module::class,
 
     ],
 

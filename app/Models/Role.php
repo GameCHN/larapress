@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Zizaco\Entrust\EntrustRole;
 
@@ -16,12 +16,12 @@ use Zizaco\Entrust\EntrustRole;
  * @property \Carbon\Carbon $updated_at 修改更新时间
  * @property-read \Illuminate\Database\Eloquent\Collection|\Config::get('auth.model[] $users 
  * @property-read \Illuminate\Database\Eloquent\Collection|\Config::get('entrust.permission[] $perms 
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Role whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Role whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Role whereDisplayName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Role whereDescription($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Role whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Role whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Role whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Role whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Role whereDisplayName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Role whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Role whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\Role whereUpdatedAt($value)
  */
 class Role extends EntrustRole
 {

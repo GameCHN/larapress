@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Cache;
+namespace YCMS\Cache;
 
 use Cache;
 use DB;
@@ -13,7 +13,7 @@ use Config;
  * 用于缓存比较通用的内容Content/元Meta数据
  * 注意：这里存取数据未使用仓库，而是直接DB操作
  *
- * @package Douyasi\Cache
+ * @package YCMS\Cache
  * @author raoyc <raoyc2009@gmail.com>
  */
 class DataCache

@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Providers;
+namespace YCMS\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Douyasi\Extensions\DouyasiValidator as DouyasiValidator;
+use YCMS\Extensions\DouyasiValidator as DouyasiValidator;
 
 //use Validator;
 

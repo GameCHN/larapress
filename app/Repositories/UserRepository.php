@@ -1,9 +1,9 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\User;
-use Douyasi\Models\Role;
+use YCMS\Models\User;
+use YCMS\Models\Role;
 
 /**
  * 用户仓库UserRepository
@@ -15,15 +15,15 @@ class UserRepository extends BaseRepository
     /**
      * The Role instance.
      *
-     * @var Douyasi\Models\Role
+     * @var YCMS\Models\Role
      */
     protected $role;
 
     /**
      * Create a new UserRepository instance.
      *
-     * @param  Douyasi\Models\Content $content
-     * @param  Douyasi\Models\Role $role
+     * @param  YCMS\Models\Content $content
+     * @param  YCMS\Models\Role $role
      * @return void
      */
     public function __construct(
@@ -37,9 +37,9 @@ class UserRepository extends BaseRepository
     /**
      * 存储管理型用户
      *
-     * @param  Douyasi\Models\User $manager
+     * @param  YCMS\Models\User $manager
      * @param  array $inputs
-     * @return Douyasi\Models\User
+     * @return YCMS\Models\User
      */
     private function saveManager($manager, $inputs)
     {
@@ -62,7 +62,7 @@ class UserRepository extends BaseRepository
     /**
      * 更新管理型用户
      *
-     * @param  Douyasi\Models\User $manager
+     * @param  YCMS\Models\User $manager
      * @param  array $inputs
      * @return void
      */
@@ -111,7 +111,7 @@ class UserRepository extends BaseRepository
     /**
      * 获取用户角色
      *
-     * @param  Douyasi\Models\User
+     * @param  YCMS\Models\User
      * @return Illuminate\Support\Collection
      */
     public function getRole($manager)
@@ -122,7 +122,7 @@ class UserRepository extends BaseRepository
     /**
      * 伪造一个id为0的Role对象
      *
-     * @return Douyasi\Models\Role
+     * @return YCMS\Models\Role
      */
     public function fakeRole()
     {
@@ -135,7 +135,7 @@ class UserRepository extends BaseRepository
      * 获取特定id管理员信息
      * 
      * @param  int $id
-     * @return Douyasi\Models\User
+     * @return YCMS\Models\User
      */
     public function manager($id)
     {
@@ -210,7 +210,7 @@ class UserRepository extends BaseRepository
      * @param  array $inputs
      * @param  string $type 用户模型类型 管理型用户manager,客户customer
      * @param  string|int $user_id 管理用户id
-     * @return Douyasi\Models\User
+     * @return YCMS\Models\User
      */
     public function store($inputs, $type = 'manager', $user_id = '0')
     {

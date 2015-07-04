@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Http\Controllers;
+namespace YCMS\Http\Controllers;
 
 /**
  * 前后台共用控制器

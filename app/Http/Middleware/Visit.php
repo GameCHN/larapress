@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Http\Middleware;
+namespace YCMS\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Models;
+namespace YCMS\Models;
 
 use Eloquent;
 
@@ -11,9 +11,9 @@ use Eloquent;
  * @property integer $id id
  * @property string $name 配置选项名
  * @property string $value 配置选项值
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemOption whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemOption whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SystemOption whereValue($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemOption whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemOption whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\YCMS\Models\SystemOption whereValue($value)
  */
 class SystemOption extends Eloquent
 {

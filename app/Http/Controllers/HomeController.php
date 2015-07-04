@@ -1,6 +1,6 @@
 <?php
 
-namespace Douyasi\Http\Controllers;
+namespace YCMS\Http\Controllers;
 
 class HomeController extends Controller {
 

@@ -1,17 +1,17 @@
 <?php
 
-namespace Douyasi\Listeners;
+namespace YCMS\Listeners;
 
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldBeQueued;
 use Log;
-use Douyasi\Logger\SystemLogger as SystemLogger;
+use YCMS\Logger\SystemLogger as SystemLogger;
 
 /**
  * Class UserEventHandler
  * (管理)用户登录/登出等活动事件监听器
  *
- * @package Douyasi\Handlers\Events
+ * @package YCMS\Handlers\Events
  * @author raoyc <raoyc2009@gmail.com>
  */
 class UserEventListener
@@ -94,9 +94,9 @@ class UserEventListener
     public function subscribe($events)
     {
         //这里需申明完整类路径，否则会出现'Class UserEventListener does not exist'错误
-        $events->listen('Douyasi\Events\UserLogin', 'Douyasi\Listeners\UserEventListener@onUserLogin');
-        $events->listen('Douyasi\Events\UserLogout', 'Douyasi\Listeners\UserEventListener@onUserLogout');
-        $events->listen('Douyasi\Events\UserUpdate', 'Douyasi\Listeners\UserEventListener@onUserUpdate');
-        $events->listen('Douyasi\Events\UserUpload', 'Douyasi\Listeners\UserEventListener@onUserUpload');
+        $events->listen('YCMS\Events\UserLogin', 'YCMS\Listeners\UserEventListener@onUserLogin');
+        $events->listen('YCMS\Events\UserLogout', 'YCMS\Listeners\UserEventListener@onUserLogout');
+        $events->listen('YCMS\Events\UserUpdate', 'YCMS\Listeners\UserEventListener@onUserUpdate');
+        $events->listen('YCMS\Events\UserUpload', 'YCMS\Listeners\UserEventListener@onUserUpload');
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Interfaces\IRepository;
+use YCMS\Interfaces\IRepository;
 
 abstract class BaseRepository implements IRepository
 {

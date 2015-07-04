@@ -1,8 +1,8 @@
 <?php
 
-namespace Douyasi\Repositories;
+namespace YCMS\Repositories;
 
-use Douyasi\Models\SystemOption;
+use YCMS\Models\SystemOption;
 
 /**
  * 系统配置仓库SystemOptionRepository
@@ -15,14 +15,14 @@ class SystemOptionRepository extends BaseRepository
     /**
      * The SystemOption instance.
      *
-     * @var Douyasi\Models\SystemOption
+     * @var YCMS\Models\SystemOption
      */
     protected $option;
 
     /**
      * Create a new SystemOptionRepository instance.
      *
-     * @param  Douyasi\Models\SystemOption $option
+     * @param  YCMS\Models\SystemOption $option
      * @return void
      */
     public function __construct(
