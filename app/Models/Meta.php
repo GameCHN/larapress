@@ -8,6 +8,25 @@ use Eloquent;
  * 元模型
  *
  * @author raoyc <raoyc2009@gmail.com>
+ * @property integer $id id
+ * @property string $name meta名
+ * @property string $thumb meta缩略图
+ * @property string $slug meta缩略名
+ * @property string $type meta类型: [category]-分类，[tag]-标签
+ * @property string $description meta描述
+ * @property integer $count meta被使用的次数
+ * @property integer $sort meta排序，数字越大排序越靠前
+ * @property-read \Douyasi\Models\Content $content 
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereThumb($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereSlug($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereType($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereCount($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta whereSort($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta category()
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\Meta tag()
  */
 class Meta extends Eloquent
 {

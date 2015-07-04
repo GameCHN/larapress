@@ -21,7 +21,6 @@
         "vinkla/hashids": "^2.0@dev",
         "lord/laroute": "2.*",
         "illuminate/html": "^5.0@dev",
-        "pingpong/modules": "^2",
         "ycms/modules": "v2.1.1"
     },
     "require-dev": {

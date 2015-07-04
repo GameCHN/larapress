@@ -8,6 +8,15 @@ use Eloquent;
  * 动态设置类型模型
  *
  * @author raoyc <raoyc2009@gmail.com>
+ * @property integer $id id
+ * @property string $name 设置类型项名
+ * @property string $value 设置类型项值
+ * @property integer $sort 设置类型排序，数字越大排序越靠前
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Douyasi\Models\Setting[] $setting 
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereValue($value)
+ * @method static \Illuminate\Database\Query\Builder|\Douyasi\Models\SettingType whereSort($value)
  */
 class SettingType extends Eloquent
 {

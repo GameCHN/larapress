@@ -146,6 +146,8 @@ return [
         Douyasi\Providers\EventServiceProvider::class,
         Douyasi\Providers\RouteServiceProvider::class,
 
+        Pingpong\Modules\ModulesServiceProvider::class,
+
 
         /*
          * YASCMF附加
@@ -153,6 +155,9 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         Douyasi\Providers\DouyasiValidatorServiceProvider::class,
+
+        Lord\Laroute\LarouteServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
@@ -210,6 +215,8 @@ return [
         'Html'      => Illuminate\Html\HtmlFacade::class,
         'Ip'        => Zhuzhichao\IpLocationZh\Ip::class,
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+
+         'Module' => Pingpong\Modules\ModulesServiceProvider::class,
 
     ],
 
