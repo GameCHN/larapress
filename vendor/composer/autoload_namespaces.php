@@ -11,6 +11,8 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'PhpSpec' => array($vendorDir . '/phpspec/phpspec/src'),
+    'ParsedownExtra' => array($vendorDir . '/erusev/parsedown-extra'),
+    'Parsedown' => array($vendorDir . '/erusev/parsedown'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Jenssegers\\Mongodb\\Session' => array($vendorDir . '/jenssegers/mongodb-session/src'),
     'Jenssegers\\Mongodb\\Sentry' => array($vendorDir . '/jenssegers/mongodb-sentry/src'),

@@ -630,13 +630,44 @@ class Request extends SymfonyRequest implements ArrayAccess
             }
 
             foreach ($types as $type) {
-                if ($this->matchesType($accept, $type) || $accept === strtok('/', $type).'/*') {
+                if ($this->matchesType($accept, $type) || $accept === strtok($type, '/').'/*') {
                     return true;
                 }
             }
         }
 
         return false;
+    }
+
+    /**
+     * Return the most suitable content type from the given array based on content negotiation.
+     *
+     * @param  string|array  $contentTypes
+     * @return string|null
+     */
+    public function prefers($contentTypes)
+    {
+        $accepts = $this->getAcceptableContentTypes();
+
+        $contentTypes = (array) $contentTypes;
+
+        foreach ($accepts as $accept) {
+            if (in_array($accept, ['*/*', '*'])) {
+                return $contentTypes[0];
+            }
+
+            foreach ($contentTypes as $contentType) {
+                $type = $contentType;
+
+                if (!is_null($mimeType = $this->getMimeType($contentType))) {
+                    $type = $mimeType;
+                }
+
+                if ($this->matchesType($type, $accept) || $accept === strtok($type, '/').'/*') {
+                    return $contentType;
+                }
+            }
+        }
     }
 
     /**
@@ -741,14 +772,18 @@ class Request extends SymfonyRequest implements ArrayAccess
     /**
      * Get the route handling the request.
      *
-     * @return \Illuminate\Routing\Route|null
+     * @param string|null $param
+     *
+     * @return object|string
      */
-    public function route()
+    public function route($param = null)
     {
-        if (func_num_args() == 1) {
-            return $this->route()->parameter(func_get_arg(0));
+        $route = call_user_func($this->getRouteResolver());
+
+        if (is_null($route) || is_null($param)) {
+            return $route;
         } else {
-            return call_user_func($this->getRouteResolver());
+            return $route->parameter($param);
         }
     }
 
@@ -855,8 +890,8 @@ class Request extends SymfonyRequest implements ArrayAccess
 
         if (array_key_exists($key, $all)) {
             return $all[$key];
-        } elseif (!is_null($this->route())) {
-            return $this->route()->parameter($key);
+        } else {
+            return $this->route($key);
         }
     }
 }
