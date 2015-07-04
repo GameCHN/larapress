@@ -10,7 +10,8 @@
         "zizaco/entrust": "dev-laravel-5",
         "zhuzhichao/ip-location-zh": "~1.2",
         "barryvdh/laravel-debugbar": "~2.0",
-        "douyasi/identity-card": "dev-master"
+        "douyasi/identity-card": "dev-master",
+        "doctrine/dbal": "2.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
