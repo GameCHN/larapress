@@ -27,7 +27,7 @@ return array(
     'SuperClosure\\' => array($vendorDir . '/jeremeamia/SuperClosure/src'),
     'Stringy\\' => array($vendorDir . '/danielstjules/stringy/src'),
     'Pingpong\\Support\\' => array($vendorDir . '/pingpong/support'),
-    'Pingpong\\Modules\\' => array($vendorDir . '/pingpong/modules'),
+    'Pingpong\\Modules\\' => array($vendorDir . '/pingpong/modules', $vendorDir . '/ycms/modules'),
     'Pingpong\\Generators\\' => array($vendorDir . '/pingpong/generators'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Lord\\Laroute\\' => array($vendorDir . '/lord/laroute/src'),
