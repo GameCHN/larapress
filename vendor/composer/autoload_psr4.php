@@ -34,6 +34,7 @@ return array(
     'Modules\\' => array($baseDir . '/modules'),
     'Lord\\Laroute\\' => array($vendorDir . '/lord/laroute/src'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
+    'Laracasts\\Generators\\' => array($vendorDir . '/laracasts/generators/src'),
     'Illuminate\\Html\\' => array($vendorDir . '/illuminate/html'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'GrahamCampbell\\Manager\\' => array($vendorDir . '/graham-campbell/manager/src'),

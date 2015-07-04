@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a727110fc9ac571fcb310647af408f9f",
+    "hash": "6d8383802be4c032f523f3b1319f7da3",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -3713,6 +3713,50 @@
             "time": "2015-05-11 14:41:42"
         },
         {
+            "name": "laracasts/generators",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/Laravel-5-Generators-Extended.git",
+                "reference": "bf6d6ef779f397f6b1c0f133bbb8ebb6a55636e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/Laravel-5-Generators-Extended/zipball/bf6d6ef779f397f6b1c0f133bbb8ebb6a55636e0",
+                "reference": "bf6d6ef779f397f6b1c0f133bbb8ebb6a55636e0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laracasts\\Generators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Extend Laravel 5's generators.",
+            "keywords": [
+                "generators",
+                "laravel"
+            ],
+            "time": "2015-05-07 15:53:57"
+        },
+        {
             "name": "mockery/mockery",
             "version": "0.9.4",
             "source": {
@@ -4808,7 +4852,8 @@
         "laravel/envoy": 20,
         "barryvdh/laravel-ide-helper": 20,
         "vinkla/hashids": 20,
-        "illuminate/html": 20
+        "illuminate/html": 20,
+        "laracasts/generators": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
