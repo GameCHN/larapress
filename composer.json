@@ -34,7 +34,8 @@
             "database"
         ],
         "psr-4": {
-            "Douyasi\\": "app/"
+            "Douyasi\\": "app/",
+            "Modules\\": "modules/"
         }
     },
     "autoload-dev": {
