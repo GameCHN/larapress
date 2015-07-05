@@ -20,4 +20,5 @@ return array(
     $vendorDir . '/zhuzhichao/ip-location-zh/src/IpLocationZh.php',
     $vendorDir . '/oodle/krumo/class.krumo.php',
     $vendorDir . '/illuminate/html/helpers.php',
+    $baseDir . '/app/functions.php',
 );

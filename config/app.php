@@ -160,6 +160,7 @@ return [
         //append
 
         Pingpong\Modules\ModulesServiceProvider::class,
+        YCMS\Providers\YCMSServiceProvider::class,
     ],
 
     /*

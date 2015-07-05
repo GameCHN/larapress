@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.1.6 (LTS) on 2015-07-04.
+ * Generated for Laravel 5.1.6 (LTS) on 2015-07-05.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -1080,7 +1080,7 @@ namespace {
          */
         public static function handle($input, $output = null){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \Douyasi\Console\Kernel::handle($input, $output);
+            return \YCMS\Console\Kernel::handle($input, $output);
         }
         
         /**
@@ -1093,7 +1093,7 @@ namespace {
          */
         public static function terminate($input, $status){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \Douyasi\Console\Kernel::terminate($input, $status);
+            \YCMS\Console\Kernel::terminate($input, $status);
         }
         
         /**
@@ -1106,7 +1106,7 @@ namespace {
          */
         public static function call($command, $parameters = array()){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \Douyasi\Console\Kernel::call($command, $parameters);
+            return \YCMS\Console\Kernel::call($command, $parameters);
         }
         
         /**
@@ -1119,7 +1119,7 @@ namespace {
          */
         public static function queue($command, $parameters = array()){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \Douyasi\Console\Kernel::queue($command, $parameters);
+            \YCMS\Console\Kernel::queue($command, $parameters);
         }
         
         /**
@@ -1130,7 +1130,7 @@ namespace {
          */
         public static function all(){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \Douyasi\Console\Kernel::all();
+            return \YCMS\Console\Kernel::all();
         }
         
         /**
@@ -1141,7 +1141,7 @@ namespace {
          */
         public static function output(){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \Douyasi\Console\Kernel::output();
+            return \YCMS\Console\Kernel::output();
         }
         
         /**
@@ -1152,7 +1152,7 @@ namespace {
          */
         public static function bootstrap(){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \Douyasi\Console\Kernel::bootstrap();
+            \YCMS\Console\Kernel::bootstrap();
         }
         
     }
@@ -11946,6 +11946,432 @@ namespace {
          */
         public static function routeNeedsRoleOrPermission($route, $roles, $permissions, $result = null, $requireAll = false){
             \Zizaco\Entrust\Entrust::routeNeedsRoleOrPermission($route, $roles, $permissions, $result, $requireAll);
+        }
+        
+    }
+
+
+    class Module extends \Pingpong\Modules\Facades\Module{
+        
+        /**
+         * Add other module location.
+         *
+         * @param string $path
+         * @return $this 
+         * @static 
+         */
+        public static function addLocation($path){
+            return \Pingpong\Modules\Repository::addLocation($path);
+        }
+        
+        /**
+         * Alternative method for "addPath".
+         *
+         * @param string $path
+         * @return $this 
+         * @static 
+         */
+        public static function addPath($path){
+            return \Pingpong\Modules\Repository::addPath($path);
+        }
+        
+        /**
+         * Get all additional paths.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function getPaths(){
+            return \Pingpong\Modules\Repository::getPaths();
+        }
+        
+        /**
+         * Get scanned modules paths.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function getScanPaths(){
+            return \Pingpong\Modules\Repository::getScanPaths();
+        }
+        
+        /**
+         * Get & scan all modules.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function scan(){
+            return \Pingpong\Modules\Repository::scan();
+        }
+        
+        /**
+         * Get all modules.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function all(){
+            return \Pingpong\Modules\Repository::all();
+        }
+        
+        /**
+         * Get cached modules.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function getCached(){
+            return \Pingpong\Modules\Repository::getCached();
+        }
+        
+        /**
+         * Get all modules as collection instance.
+         *
+         * @return \Pingpong\Modules\Collection 
+         * @static 
+         */
+        public static function toCollection(){
+            return \Pingpong\Modules\Repository::toCollection();
+        }
+        
+        /**
+         * Get modules by status.
+         *
+         * @param $status
+         * @return array 
+         * @static 
+         */
+        public static function getByStatus($status){
+            return \Pingpong\Modules\Repository::getByStatus($status);
+        }
+        
+        /**
+         * Determine whether the given module exist.
+         *
+         * @param $name
+         * @return bool 
+         * @static 
+         */
+        public static function has($name){
+            return \Pingpong\Modules\Repository::has($name);
+        }
+        
+        /**
+         * Get list of enabled modules.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function enabled(){
+            return \Pingpong\Modules\Repository::enabled();
+        }
+        
+        /**
+         * Get list of disabled modules.
+         *
+         * @return array 
+         * @static 
+         */
+        public static function disabled(){
+            return \Pingpong\Modules\Repository::disabled();
+        }
+        
+        /**
+         * Get count from all modules.
+         *
+         * @return int 
+         * @static 
+         */
+        public static function count(){
+            return \Pingpong\Modules\Repository::count();
+        }
+        
+        /**
+         * Get all ordered modules.
+         *
+         * @param string $direction
+         * @return array 
+         * @static 
+         */
+        public static function getOrdered($direction = 'asc'){
+            return \Pingpong\Modules\Repository::getOrdered($direction);
+        }
+        
+        /**
+         * Get a module path.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getPath(){
+            return \Pingpong\Modules\Repository::getPath();
+        }
+        
+        /**
+         * Register the modules.
+         *
+         * @static 
+         */
+        public static function register(){
+            return \Pingpong\Modules\Repository::register();
+        }
+        
+        /**
+         * Boot the modules.
+         *
+         * @static 
+         */
+        public static function boot(){
+            return \Pingpong\Modules\Repository::boot();
+        }
+        
+        /**
+         * Find a specific module.
+         *
+         * @param $name
+         * @static 
+         */
+        public static function find($name){
+            return \Pingpong\Modules\Repository::find($name);
+        }
+        
+        /**
+         * Alternative for "find" method.
+         *
+         * @param $name
+         * @static 
+         */
+        public static function get($name){
+            return \Pingpong\Modules\Repository::get($name);
+        }
+        
+        /**
+         * Find a specific module, if there return that, otherwise throw exception.
+         *
+         * @param $name
+         * @return \Pingpong\Modules\Module 
+         * @throws ModuleNotFoundException
+         * @static 
+         */
+        public static function findOrFail($name){
+            return \Pingpong\Modules\Repository::findOrFail($name);
+        }
+        
+        /**
+         * Get all modules as laravel collection instance.
+         *
+         * @return \Pingpong\Modules\Collection 
+         * @static 
+         */
+        public static function collections(){
+            return \Pingpong\Modules\Repository::collections();
+        }
+        
+        /**
+         * Get module path for a specific module.
+         *
+         * @param $module
+         * @return string 
+         * @static 
+         */
+        public static function getModulePath($module){
+            return \Pingpong\Modules\Repository::getModulePath($module);
+        }
+        
+        /**
+         * Get asset path for a specific module.
+         *
+         * @param $module
+         * @return string 
+         * @static 
+         */
+        public static function assetPath($module){
+            return \Pingpong\Modules\Repository::assetPath($module);
+        }
+        
+        /**
+         * Get a specific config data from a configuration file.
+         *
+         * @param $key
+         * @return mixed 
+         * @static 
+         */
+        public static function config($key){
+            return \Pingpong\Modules\Repository::config($key);
+        }
+        
+        /**
+         * Get storage path for module used.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getUsedStoragePath(){
+            return \Pingpong\Modules\Repository::getUsedStoragePath();
+        }
+        
+        /**
+         * Set module used for cli session.
+         *
+         * @param $name
+         * @throws ModuleNotFoundException
+         * @static 
+         */
+        public static function setUsed($name){
+            return \Pingpong\Modules\Repository::setUsed($name);
+        }
+        
+        /**
+         * Get module used for cli session.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getUsedNow(){
+            return \Pingpong\Modules\Repository::getUsedNow();
+        }
+        
+        /**
+         * Get used now.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getUsed(){
+            return \Pingpong\Modules\Repository::getUsed();
+        }
+        
+        /**
+         * Get laravel filesystem instance.
+         *
+         * @return \Illuminate\Filesystem\Filesystem 
+         * @static 
+         */
+        public static function getFiles(){
+            return \Pingpong\Modules\Repository::getFiles();
+        }
+        
+        /**
+         * Get module assets path.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getAssetsPath(){
+            return \Pingpong\Modules\Repository::getAssetsPath();
+        }
+        
+        /**
+         * Get asset url from a specific module.
+         *
+         * @param string $asset
+         * @param bool $secure
+         * @return string 
+         * @static 
+         */
+        public static function asset($asset){
+            return \Pingpong\Modules\Repository::asset($asset);
+        }
+        
+        /**
+         * Determine whether the given module is activated.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function active($name){
+            return \Pingpong\Modules\Repository::active($name);
+        }
+        
+        /**
+         * Determine whether the given module is not activated.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function notActive($name){
+            return \Pingpong\Modules\Repository::notActive($name);
+        }
+        
+        /**
+         * Enabling a specific module.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function enable($name){
+            return \Pingpong\Modules\Repository::enable($name);
+        }
+        
+        /**
+         * Disabling a specific module.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function disable($name){
+            return \Pingpong\Modules\Repository::disable($name);
+        }
+        
+        /**
+         * Delete a specific module.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function delete($name){
+            return \Pingpong\Modules\Repository::delete($name);
+        }
+        
+        /**
+         * Update dependencies for the specified module.
+         *
+         * @param string $module
+         * @static 
+         */
+        public static function update($module){
+            return \Pingpong\Modules\Repository::update($module);
+        }
+        
+        /**
+         * Install the specified module.
+         *
+         * @param string $name
+         * @param string $version
+         * @param string $type
+         * @param bool $subtree
+         * @return \Symfony\Component\Process\Process 
+         * @static 
+         */
+        public static function install($name, $version = 'dev-master', $type = 'composer', $subtree = false){
+            return \Pingpong\Modules\Repository::install($name, $version, $type, $subtree);
+        }
+        
+        /**
+         * Get stub path.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getStubPath(){
+            return \Pingpong\Modules\Repository::getStubPath();
+        }
+        
+        /**
+         * Set stub path.
+         *
+         * @param string $stubPath
+         * @return $this 
+         * @static 
+         */
+        public static function setStubPath($stubPath){
+            return \Pingpong\Modules\Repository::setStubPath($stubPath);
         }
         
     }
