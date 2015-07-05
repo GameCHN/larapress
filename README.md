@@ -1,1 +1,1 @@
-请参考 [YASCMF 安装文档](wiki/YASCMF-安装文档)
+请先阅读 [YCMS 开发手册](https://github.com/ycms/framework/wiki)
