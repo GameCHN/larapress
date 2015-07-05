@@ -24,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path().'/vendor/ycms/modules/src/Pingpong/Modules/Commands/stubs',
+        'path' => dirname(base_path()).'/vendor/ycms/modules/src/Pingpong/Modules/Commands/stubs',
         'files' => [
             'start' => 'start.php',
             'routes' => 'Http/routes.php',
@@ -72,7 +72,7 @@ return [
         |
         */
 
-        'assets' => public_path('modules'),
+        'assets' => public_path(),
         /*
         |--------------------------------------------------------------------------
         | The migrations path
@@ -123,7 +123,7 @@ return [
     'scan' => [
         'enabled' => false,
         'paths' => [
-            base_path('vendor/*/*'),
+            dirname(base_path()).'/vendor/*/*',
         ],
     ],
     /*
@@ -137,10 +137,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'pingpong-modules',
+        'vendor' => 'ycms',
         'author' => [
-            'name' => 'Pingpong Labs',
-            'email' => 'pingpong.labs@gmail.com',
+            'name' => 'YCMS Labs',
+            'email' => 'ycms.net@gmail.com',
         ],
     ],
     /*
@@ -153,7 +153,7 @@ return [
     */
     'cache' => [
         'enabled' => false,
-        'key' => 'pingpong-modules',
+        'key' => 'ycms-modules',
         'lifetime' => 60,
     ],
 

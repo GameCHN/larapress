@@ -4,6 +4,8 @@ namespace YCMS\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use YCMS\Extensions\DouyasiBlade;
+use View;
+use Illuminate\Support\MessageBag;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
 
+        View::share('errors', new MessageBag([]));
        //
         if ($this->app->environment() == 'local') {
             $this->app->register('Laracasts\Generators\GeneratorsServiceProvider');

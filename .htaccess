@@ -7,7 +7,7 @@
 
     RewriteBase /
 
-    RewriteRule ^/*(source|data/storage|vendor|composer.*)/* - [F,L]
+    RewriteRule ^/*(source|artisan|vendor|composer.*)/* - [F,L]
 
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]

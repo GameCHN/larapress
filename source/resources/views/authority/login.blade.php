@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">登录开始您的会话</p>
-        @if (count($errors) > 0)
+        @if (isset($errors) && count($errors) > 0)
         <div class="alert alert-danger alert-dismissable">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
             <h4><i class="icon fa fa-ban"></i> 警告!</h4>

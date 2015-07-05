@@ -11,6 +11,8 @@
 |
 */
 
+error_reporting(error_reporting() & ~E_STRICT & ~E_NOTICE & ~E_DEPRECATED);
+
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__ . '/../')
 );

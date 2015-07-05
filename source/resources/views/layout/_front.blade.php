@@ -1,18 +1,7 @@
 @extends('layout._base')
 
 @section('hacker_header')
-<!--
- __     __         _____   _____  __  __  ______ 
- \ \   / / /\     / ____| / ____||  \/  ||  ____|
-  \ \_/ / /  \   | (___  | |     | \  / || |__   
-   \   / / /\ \   \___ \ | |     | |\/| ||  __|  
-    | | / ____ \  ____) || |____ | |  | || |     
-    |_|/_/    \_\|_____/  \_____||_|  |_||_|     
-                                                 
-    ASCII text from http://patorjk.com/software/taag/#p=display&h=1&v=0&f=Big&t=YASCMF
-    Theme from Bootswatch <http://bootswatch.com/>.
-    modified by raoyc<raoyc2009@gmail.com>
--->
+
 @stop
 
 @section('title') {{ isset($title) ? $title : '前台' }} - {{ Cache::get('website_title','芽丝博客') }} @stop

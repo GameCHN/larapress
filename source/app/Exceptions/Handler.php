@@ -39,6 +39,8 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+
+
         if($e instanceof MethodNotAllowedHttpException){
             return \Response::view('custom.404');
 
