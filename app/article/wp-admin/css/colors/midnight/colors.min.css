@@ -402,3 +402,7 @@ div#wp-responsive-toggle a:before {
 #wpadminbar .ab-icon, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:after, #wpadminbar .ab-item:before {
     color: #E14D43;
 }
+
+#adminmenu, #adminmenuback, #adminmenuwrap {
+    background-color: #222d32;
+}

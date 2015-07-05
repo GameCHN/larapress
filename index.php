@@ -54,6 +54,8 @@ $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
 
-$response->send();
+if(!defined('WP_ONLY') or WP_ONLY == false){
+    $response->send();
+    $kernel->terminate($request, $response);
+}
 
-$kernel->terminate($request, $response);

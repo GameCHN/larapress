@@ -13774,3 +13774,26 @@ body.locale-he-il, body.locale-he-il .press-this a.wp-switch-editor {
 html.wp-toolbar {padding-top:0;}
 
 #wpadminbar ul li {border-right:1px solid #ddd;}
+
+#wp-admin-bar-wp-logo {display: none;}
+
+#adminmenu {margin-top:0;}
+#menu-logo a.logo {
+    line-height: 46px;
+    background-color: #374850;
+    border-bottom: 1px solid #373737;
+    text-align: center;
+    color: #FA503A;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+#menu-logo a.logo div.wp-menu-image {
+    padding-top: 5px;
+    position: absolute;
+    display: none;
+}
+
+#menu-logo .logo-mini {display: none;}

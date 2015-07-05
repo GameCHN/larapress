@@ -2,15 +2,30 @@
 
 require_once dirname(__DIR__).'/vendor/autoload.php';
 
+define('WP_ALLOW_MULTISITE', true);
+
+define('WP_RELOCATE',true);
+define('RELOCATE',true);
+
+
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'kecms.dev');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 
 define('WP_SITEURL','http://'.$_SERVER['HTTP_HOST'].'/app/article');
-define('WP_HOME','http://'.$_SERVER['HTTP_HOST'].'/app/article');
+define('WP_HOME','http://'.$_SERVER['HTTP_HOST']);
 
 define('WP_CONTENT_DIR',__DIR__);
 define('WP_CONTENT_URL', '/app');
 
 define('WP_PLUGIN_DIR', WP_CONTENT_DIR);
 define('WP_PLUGIN_URL', WP_CONTENT_URL);
+
+define('COOKIEPATH',  '/');
 
 
 /**
@@ -83,6 +98,8 @@ $table_prefix  = 'wp_';
  * 强烈建议插件开发者在开发环境中启用WP_DEBUG。
  */
 define('WP_DEBUG', false);
+define('WP_DEBUG_LOG', false);
+define('WP_DEBUG_DISPLAY', true);
 
 /**
  * zh_CN本地化设置：启用ICP备案号显示

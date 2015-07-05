@@ -31,8 +31,10 @@
 
           <!-- Sidebar Menu -->
           <ul class="sidebar-menu">
-            <li class="header">主导航栏</li>
-            
+            <li class="header"><a href="#"><i class="fa fa-book"></i><span>主导航栏</span></a></li>
+
+              <li><a href="/wp-admin"><i class="fa fa-book"></i> <span>内容管理...</span></a></li>
+
             <!--含子节点 且当前状态为active 的一级导航节点-->
             <!--控制台 active treeview-->
             <li class="treeview">

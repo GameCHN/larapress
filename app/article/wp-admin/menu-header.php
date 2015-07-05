@@ -225,6 +225,28 @@ function _wp_menu_output( $menu, $submenu, $submenu_as_parent = true ) {
 <div id="adminmenuback"></div>
 <div id="adminmenuwrap">
 <ul id="adminmenu">
+    <li class="menu-logo" id="menu-logo">
+        <a href="<?=home_url()?>" target="_blank" class="logo">
+            <div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div>
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>Y</b>CMS</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>Y</b>CMS</span>
+        </a>
+    </li>
+
+     <li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true">
+        <div class="separator"></div>
+    </li>
+
+    <li class="wp-not-current-submenu menu-top toplevel_page_phppc_menu menu-top-first menu-top-last" id="toplevel_page_phppc_menu">
+        <a href="/admin" class="wp-not-current-submenu menu-top toplevel_page_phppc_menu menu-top-first menu-top-last">
+            <div class="wp-menu-arrow">
+                <div></div>
+            </div>
+            <div class="wp-menu-image dashicons-before dashicons-admin-page"><br></div>
+            <div class="wp-menu-name">扩展功能...</div>
+        </a></li>
 
 <?php
 

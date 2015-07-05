@@ -11,13 +11,25 @@
 
     # Redirect Trailing Slashes...
 
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)/$ /$1 [L,R=301]
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteRule ^(.*)/$ /$1 [L,R=301]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !^/*static/
     RewriteRule  ^(.+\.(ico|gif|png|jpe?g|txt|js|css|woff2|woff))$ /static/$1
+
+    RewriteRule ^index\.php$ - [L]
+
+    # add a trailing slash to /wp-admin
+    RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) /app/article/$2 [L]
+    RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ /app/article/$2 [L]
+    RewriteRule . index.php [L]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -26,3 +38,15 @@
     RewriteRule ^ index.php [L]
 
 </IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

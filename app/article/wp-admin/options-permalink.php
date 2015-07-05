@@ -76,7 +76,8 @@ $prefix = $blog_prefix = '';
 if ( ! got_url_rewrite() )
 	$prefix = '/index.php';
 if ( is_multisite() && !is_subdomain_install() && is_main_site() )
-	$blog_prefix = '/blog';
+	$blog_prefix = '';
+//'/blog'
 
 if ( isset($_POST['permalink_structure']) || isset($_POST['category_base']) ) {
 	check_admin_referer('update-permalink');

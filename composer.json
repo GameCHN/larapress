@@ -43,7 +43,8 @@
     ],
     "psr-4": {
       "YCMS\\": "source/app/",
-      "Modules\\": "source/modules/"
+      "Modules\\": "source/modules/",
+      "App\\":"app/"
     }
   },
   "autoload-dev": {

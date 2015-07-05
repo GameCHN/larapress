@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'namespace' => 'Modules',
+    'namespace' => 'App',
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +62,7 @@ return [
         |
         */
 
-        'modules' => base_path('modules'),
+        'modules' => dirname(base_path()).'/app',
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
