@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Zizaco\\Entrust\\' => array($vendorDir . '/zizaco/entrust/src/Entrust'),
     'Zhuzhichao\\IpLocationZh\\' => array($vendorDir . '/zhuzhichao/ip-location-zh/src'),
-    'YCMS\\' => array($baseDir . '/app'),
+    'YCMS\\' => array($baseDir . '/source/app'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'Vinkla\\Hashids\\' => array($vendorDir . '/vinkla/hashids/src'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
@@ -31,7 +31,7 @@ return array(
     'Pingpong\\Modules\\' => array($vendorDir . '/ycms/modules'),
     'Pingpong\\Generators\\' => array($vendorDir . '/pingpong/generators'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
-    'Modules\\' => array($baseDir . '/modules'),
+    'Modules\\' => array($baseDir . '/source/modules'),
     'Lord\\Laroute\\' => array($vendorDir . '/lord/laroute/src'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
     'Laracasts\\Generators\\' => array($vendorDir . '/laracasts/generators/src'),

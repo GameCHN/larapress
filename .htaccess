@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteBase /
+
+    RewriteRule ^/*(source|data/storage|vendor|composer.*)/* - [F,L]
+
+    # Redirect Trailing Slashes...
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !^/*static/
+    RewriteRule  ^(.+\.(ico|gif|png|jpe?g|txt|js|css|woff2|woff))$ /static/$1
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !\.(ico|gif|png|jpe?g|txt|js|css|woff*)$
+    RewriteRule ^ index.php [L]
+
+</IfModule>

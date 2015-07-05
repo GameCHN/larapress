@@ -1,0 +1,14 @@
+            <!-- bootstrap 分类 widget -->
+            <ul class="list-group">
+            <?php if(empty($categories)): ?>
+                <li class="list-group-item">暂无分类</li>
+            <?php else: ?>
+                <?php $article_service = app('YCMS\Services\ArticleService'); ?> <?php /* Blade模版里面服务注入 Laravel 5.1 LTS 新增功能 */ ?>
+                <?php foreach($categories as $rCat): ?>
+                <li class="list-group-item">
+                    <span class="badge"><?php echo e($rCat['count']); ?></span>
+                    <a href="<?php echo e($article_service->getCategorySlug($rCat['category']->slug, $rCat['category']->id)); ?>"><?php echo e($rCat['category']->name); ?></a>
+                </li>
+                <?php endforeach; ?>
+            <?php endif; ?>
+            </ul>

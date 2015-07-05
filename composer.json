@@ -35,21 +35,20 @@
     "laracasts/generators": "dev-master"
   },
   "autoload": {
+    "files": [
+    ],
     "classmap": [
-      "database",
-      "app/Facades"
+      "source/database",
+      "source/app/Facades"
     ],
     "psr-4": {
-      "YCMS\\": "app/",
-      "Modules\\": "modules/"
+      "YCMS\\": "source/app/",
+      "Modules\\": "source/modules/"
     }
   },
   "autoload-dev": {
     "classmap": [
-      "tests/TestCase.php"
-    ],
-    "files": [
-      "app/functions.php"
+      "source/tests/TestCase.php"
     ]
   },
   "scripts": {
@@ -62,7 +61,7 @@
       "php artisan optimize"
     ],
     "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
+      "php -r \"copy('source/.env.example', 'source/.env');\""
     ],
     "post-create-project-cmd": [
       "php artisan key:generate"
