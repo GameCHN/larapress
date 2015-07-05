@@ -10,6 +10,8 @@
     RewriteRule ^/*(source|artisan|vendor|composer.*)/* - [F,L]
 
     # Redirect Trailing Slashes...
+
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
     RewriteCond %{REQUEST_FILENAME} !-d
