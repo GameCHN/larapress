@@ -4,11 +4,11 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="#" class="logo">
+        <a href="{{ route('home') }}" target="_blank" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>Y</b>AS</span>
+          <span class="logo-mini"><b>Y</b>CMS</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>YAS</b>CMF</span>
+          <span class="logo-lg"><b>Y</b>CMS</span>
         </a>
 
         <!-- Header Navbar -->
@@ -21,7 +21,7 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
 
-              <li>
+              <li class="hide">
                 <a href="{{ route('home') }}">
                   <i class="fa fa-home" title="前台首页"></i>
                   <span class="label label-info">H</span>
@@ -62,7 +62,7 @@
               </li><!-- /.messages-menu -->
 
               <!-- Notifications Menu -->
-              <li class="dropdown notifications-menu">
+              <li class="dropdown notifications-menu hide">
                 <!-- Menu toggle button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-bell-o"></i>
@@ -84,7 +84,7 @@
                 </ul>
               </li>
               <!-- Tasks Menu -->
-              <li class="dropdown tasks-menu">
+              <li class="dropdown tasks-menu hide">
                 <!-- Menu Toggle Button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-flag-o"></i>

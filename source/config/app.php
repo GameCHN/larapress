@@ -150,7 +150,7 @@ return [
         /*
          * YASCMF附加
          */
-        Barryvdh\Debugbar\ServiceProvider::class,
+        //Barryvdh\Debugbar\ServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
         YCMS\Providers\DouyasiValidatorServiceProvider::class,
 

@@ -4220,3 +4220,7 @@ td.overflow-hidden {
 span.article-flag {
   cursor: pointer;
 }
+
+.user-panel {
+    display: none;
+}
