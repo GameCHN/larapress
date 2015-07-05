@@ -53,7 +53,8 @@ class Handler extends ExceptionHandler
                     break;
 
                 case '500':
-                    \Log::error($exception);
+                    kd('test');
+                    //\Log::error($exception);
                     return \Response::view('custom.500');
                     break;
 
