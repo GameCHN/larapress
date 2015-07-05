@@ -19,7 +19,7 @@ return array(
     | the role if it is in a different namespace.
     |
     */
-    'role' => 'Douyasi\Models\Role',
+    'role' => 'YCMS\Models\Role',
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return array(
     | Update the permission if it is in a different namespace.
     |
     */
-    'permission' => 'Douyasi\Models\Permission',
+    'permission' => 'YCMS\Models\Permission',
 
     /*
     |--------------------------------------------------------------------------
